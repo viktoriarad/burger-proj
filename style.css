@@ -1,0 +1,1101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* header */
+
+header {
+  background-image: url(pictures/slider.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+}
+
+nav .fa-bars {
+  display: none;
+  color: #fff;
+  font-size: 40px;
+  text-align: left;
+  padding: 10px 0 0 15px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  margin: 30px;
+  padding: 0 30px 10px 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  border-bottom: 2px solid transparent;
+  transition: .3s;
+}
+
+nav ul li a:hover {
+  border-color: white;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+
+button.button-1 {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 10px 20px;
+  background-color: #e94f3d;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.icon {
+  width: 15%;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: rgb(180, 43, 43);
+}
+
+
+/* section 1 */
+
+section.description {
+  overflow: hidden;
+}
+
+.description-left,
+.description-right {
+  width: 500px;
+}
+
+h1 {
+  margin-top: 70px;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+}
+
+img.decor {
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+.description p {
+  word-spacing: 3px;
+  line-height: 25px;
+  margin-top: 25px;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  text-align: center;
+}
+
+
+/* section 2 */
+
+.types-of-food {
+  width: 100%;
+  height: 300px;
+  margin-top: 80px;
+}
+
+.type-of-food {
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  transition: .5s;
+}
+
+.type-of-food:hover {
+  height: 330px;
+  transform: translateY(-15px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.type-of-food:hover .coin {
+  background-color: #e94f3d;
+}
+
+.type-of-food:hover .coin a {
+  color: white;
+}
+
+.burgers {
+  background-image: url(pictures/Burger-Craft-139.jpg);
+
+}
+
+.hot-dogs {
+  background-image: url(pictures/Burger-Craft-123.jpg);
+}
+
+.bowls {
+  background-image: url(pictures/Burger-Craft-44.jpg);
+}
+
+.salads {
+  background-image: url(pictures/Burger-Craft-72.jpg);
+}
+
+.type-of-food>div.coin {
+  width: 180px;
+  height: 180px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: .5s;
+}
+
+.type-of-food .coin a {
+  display: block;
+  line-height: 180px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  color: #e94f3d;
+  transition: .5s;
+}
+
+/* section 3 */
+
+section.eat {
+  margin-top: 50px;
+  width: 100%;
+}
+
+
+.eat .wrap div {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  width: 33.33%;
+  padding: 0 30px;
+  vertical-align: top;
+}
+
+.eat div h2 {
+  font-size: 24px;
+  font-family: 'Righteous', cursive;
+  margin-top: 75px;
+  color: #333;
+  font-weight: 400;
+}
+
+.eat div p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+}
+
+.decor-small {
+  width: 95%;
+  padding: 5px 0 15px 0;
+}
+
+.hamb {
+  background-image: url(pictures/burger-craft-burger-icon.png);
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  background-size: 70%;
+  background-position: 50% 0;
+}
+
+.healthy-food {
+  background-image: url(pictures/burger-craft-vegetarian-icon.png);
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  background-size: 70%;
+  background-position: 50% 0;
+}
+
+.vegeterian {
+  background-image: url(pictures/burger-craft-ethically-sourced-icon.png);
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  background-size: 70%;
+  background-position: 50% 0;
+}
+
+button.button-2 {
+  display: block;
+  margin: 80px auto 50px auto;
+  background-color: #e94f3d;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+button.button-2:hover {
+  background-color: rgb(180, 43, 43);
+}
+
+/* section 4  */
+
+.favorites {
+  width: 100%;
+  /* height: 82vh; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pictures/urban-8-picks-board-bg.png);
+  padding-bottom: 30px;
+}
+
+.favorites h2 {
+  color: white;
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.dishes>div {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  width: 450px;
+  margin: 50px 20px;
+  box-sizing: border-box;
+}
+
+.dishes img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.dishes h3 {
+  margin: 10px;
+  font-family: 'Righteous', cursive;
+  font-size: 26px;
+  color: #333;
+  font-weight: 400;
+}
+
+.dishes p {
+  margin: 0 10px 10px 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(102, 102, 102);
+
+}
+
+/* section 5 */
+
+.opinions {
+  width: 100%;
+  /* height: 50vh; */
+  margin: 30px 0;
+}
+
+.opinion {
+  width: 1000px;
+  margin: 30px auto 0 auto;
+  line-height: 30px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.opinion img {
+  padding: 15px 0;
+}
+
+button.button-3 {
+  display: block;
+  margin: 30px auto 0 auto;
+  background-color: #e94f3d;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  transition: .3s;
+}
+
+i.fa-chevron-right {
+  margin-left: 7px;
+  opacity: 0;
+  transition: .3s;
+}
+
+button.button-3:hover {
+  background-color: rgb(180, 43, 43);
+}
+
+button.button-3:hover i.fa-chevron-right {
+  opacity: 1;
+}
+
+/* section 6  */
+
+.learn-more {
+  background-color: #e94f3d;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.learn-more div {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+.learn-more h2 {
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+button.button-4 {
+  display: block;
+  margin: 30px auto 0 auto;
+  background-color: #004751;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  transition: .3s;
+}
+
+i.fa-chevron-right {
+  margin-left: 7px;
+  opacity: 0;
+  transition: .3s;
+}
+
+button.button-4:hover {
+  background-color: #03333a;
+}
+
+button.button-4:hover i.fa-chevron-right {
+  opacity: 1;
+}
+
+/* section 7*/
+
+.restaurants {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.restaurants h2 {
+  margin: 50px 0 30px 0;
+  font-family: 'Righteous', cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+}
+
+.restaurants .wrap div {
+  max-width: 450px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 15px;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+
+
+
+.restaurants .wrap div img {
+  width: 35%;
+  float: left;
+  padding: 15px;
+}
+
+
+.restaurants .wrap div h3 {
+  padding: 10px 0 0 0;
+  font-weight: 400;
+}
+
+.restaurants .wrap div h4 {
+  font-weight: 400;
+}
+
+
+.restaurants .wrap div p {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(102, 102, 102);
+  font-size: 16px;
+}
+
+.restaurants .wrap div a {
+  font-weight: 700;
+  display: inline-block;
+  padding-top: 20px;
+  color: #e94f3d;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  background-color: #004856;
+}
+
+footer .wrap>div {
+  width: 300px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px 15px 0 15px;
+}
+
+footer .wrap div img {
+  width: 60%;
+}
+
+button.button-5 {
+  display: inline-block;
+  background-color: #e94f3d;
+  border: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+button.button-5:hover {
+  background-color: #004856;
+  border: 2px solid white;
+
+}
+
+footer .wrap .iconsoc {
+  width: 10%;
+  margin-top: 25px;
+}
+
+.job p {
+  margin: 15px 0;
+}
+
+.form h2 {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+}
+
+form {
+  margin: 15px 0 20px 0;
+}
+
+form input {
+  background-color: #004856;
+  border: 2px solid white;
+  border-right: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 15px 7px;
+  color: white;
+}
+
+button.button-6 {
+  border: 2px solid white;
+  border-left: none;
+  background-color: #e94f3d;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.form p:nth-last-of-type(3) {
+  margin-top: 15px;
+}
+
+.address h2 {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+}
+
+.address div {
+  margin: 15px 0;
+}
+
+div.footer {
+  margin-top: 30px;
+  background-color: #032b33;
+  text-align: center;
+  color: white;
+  padding: 10px 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  .wrap {
+    width: 100%;
+  }
+
+
+  /* section header */
+  header {
+    min-height: 40vh;
+  }
+
+
+  nav .fa-bars {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .logo {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  button.button-1 {
+    font-size: 22px;
+    margin-top: 50px
+  }
+
+  .icon {
+    width: 15%;
+    margin-left: 5px;
+  }
+
+  /* section description */
+
+  .description p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .description p {
+    margin: 0 20px;
+  }
+
+
+  /* section types-of-food */
+  .type-of-food:hover {
+    height: 100%;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .type-of-food:hover .coin {
+    background-color: white;
+  }
+
+  .type-of-food:hover .coin a {
+    color: #e94f3d;
+  }
+
+  .type-of-food {
+    width: 50%;
+  }
+
+  /* section eat */
+
+  .eat div h2 {
+    font-size: 24px;
+  }
+
+  .eat div p {
+    font-size: 22px;
+  }
+
+  .decor-small {
+    width: 95%;
+    padding: 5px 0 15px 0;
+  }
+
+  button.button-2 {
+    font-size: 22px;
+    margin-top: 50px
+  }
+
+  /* section favorites */
+
+  .dishes>div {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .dishes p {
+    font-size: 20px;
+
+  }
+
+  .dishes img {
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+  }
+
+  /* section opinion */
+
+  .opinion {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+
+  button.button-3 {
+    font-size: 22px;
+  }
+
+  /* section lear more  */
+
+
+  .learn-more div {
+    font-size: 22px;
+  }
+
+  .learn-more p {
+    padding: 0 20px;
+  }
+
+  button.button-4 {
+    font-size: 22px;
+  }
+
+  /* section restaurants */
+
+  .restaurants .wrap div {
+    max-width: 100%;
+  }
+
+  .restaurants .wrap div img {
+    width: 15%;
+  }
+
+  .restaurants .wrap div p {
+    font-size: 22px;
+  }
+
+  .restaurants .wrap div a {
+    font-size: 22px;
+  }
+
+  /* section footer */
+
+  footer .wrap>div {
+    width: 46%;
+  }
+
+  footer .job {
+    display: none;
+  }
+
+  footer .form h2:nth-child(1),
+  footer .form form {
+    display: none;
+  }
+
+  footer .form h2 {
+    margin-bottom: 15px;
+  }
+
+  footer .wrap .iconsoc {
+    width: 13%;
+    margin: 25px 10px;
+  }
+
+  footer .form p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  /* section eat  */
+
+  .eat .wrap div {
+    width: 100%;
+  }
+
+  .eat div h2 {
+    font-size: 28px;
+    margin-top: 50px;
+  }
+
+  .eat div p {
+    font-size: 22px;
+  }
+
+  .decor-small {
+    width: 50%;
+  }
+
+  .hamb {
+    background-size: 20%;
+  }
+
+  .healthy-food {
+    background-size: 20%;
+  }
+
+  .vegeterian {
+    background-size: 20%;
+  }
+
+  /* section restaurants */
+
+  .restaurants .wrap div img {
+    width: 20%;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  /* section restaurants */
+
+  .restaurants .wrap div img {
+    width: 25%;
+  }
+
+  .restaurants .wrap div p {
+    font-size: 22px;
+  }
+
+  .restaurants .wrap div a {
+    font-size: 22px;
+  }
+
+  .restaurants .wrap div h3 {
+    font-size: 22px;
+  }
+
+  .restaurants .wrap div h4 {
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  /* section header */
+
+  .logo {
+    margin: 50px auto;
+    width: 70%;
+  }
+
+  /* section favorites */
+
+  .dishes p {
+    font-size: 22px;
+
+  }
+
+  .dishes img {
+    width: 40%;
+  }
+
+  /* section restaurants */
+
+  .restaurants .wrap div img {
+    width: 30%;
+  }
+
+  /* section eat  */
+
+  .eat div h2 {
+    font-size: 30px;
+  }
+
+  .eat div p {
+    font-size: 26px;
+  }
+
+  .decor-small {
+    width: 70%;
+  }
+
+  .hamb {
+    background-size: 40%;
+  }
+
+  .healthy-food {
+    background-size: 40%;
+  }
+
+  .vegeterian {
+    background-size: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* section favorites */
+
+  .dishes h3 {
+    font-size: 30px;
+
+  }
+
+  .dishes p {
+    font-size: 24px;
+  }
+
+  .dishes img {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* section types-of-food */
+  .type-of-food {
+    width: 100%;
+  }
+
+  /* section description */
+
+  h1 {
+    font-size: 33px;
+  }
+
+  .description p {
+    font-size: 26px;
+  }
+
+  footer .wrap>div {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  footer {
+    padding-bottom: 20px;
+  }
+
+  footer .address p {
+    font-size: 24px;
+  }
+
+  footer .address h2 {
+    font-size: 30px;
+  }
+
+
+  footer .form h2 {
+    font-size: 30px;
+  }
+
+  footer .form p {
+    font-size: 24px;
+  }
+
+  footer .wrap .iconsoc {
+    width: 20%;
+    margin: 25px 10px;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 550px) {
+
+  /* section restaurants */
+
+  .restaurants .wrap div img {
+    width: 50%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .restaurants .wrap div h3 {
+    font-size: 32px;
+  }
+
+  .restaurants .wrap div h4 {
+    font-size: 30px;
+  }
+
+  .restaurants .wrap div p {
+    font-size: 28px;
+  }
+
+  /* section opinion */
+  .opinion {
+    font-size: 28px;
+  }
+
+
+  /* section learn-more*/
+
+  .learn-more div {
+    font-size: 28px;
+  }
+
+  button.button-3 {
+    font-size: 24px;
+  }
+
+  button.button-4 {
+    font-size: 24px;
+  }
+
+  .restaurants .wrap div a {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  /* section header */
+
+  header {
+    min-height: 100vh;
+    position: relative;
+  }
+
+
+  .logo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  button.button-1 {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* section description */
+
+  img.decor {
+    width: 70%;
+  }
+
+
+  /* section eat  */
+
+  .decor-small {
+    width: 80%;
+  }
+
+  .hamb {
+    background-size: 60%;
+  }
+
+  .healthy-food {
+    background-size: 60%;
+  }
+
+  .vegeterian {
+    background-size: 60%;
+  }
+
+
+  /* section restaurants */
+
+  .restaurants .wrap div img {
+    width: 80%;
+  }
+
+  .restaurants .wrap div h3 {
+    font-size: 32px;
+    padding: 0 15px;
+  }
+
+  .restaurants .wrap div h4 {
+    font-size: 30px;
+    padding: 0 15px;
+  }
+
+  .restaurants .wrap div p {
+    font-size: 28px;
+    padding: 0 15px;
+  }
+
+  .restaurants .wrap div a {
+    padding-left: 15px;
+  }
+
+  /* section footer */
+
+  .gmap_canvas {
+    display: none;
+  }
+
+}
+
+/* 
+font-family: 'Righteous', cursive;
+font-family: 'Open Sans', sans-serif; */
