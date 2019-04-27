@@ -838,6 +838,12 @@ div.footer {
   }
 }
 
+@media (orientation:landscape) and (max-width: 900px) {
+  header {
+    min-height: 100vh;
+    position: relative;
+  }
+}
 
 @media (max-width: 800px) {
 
