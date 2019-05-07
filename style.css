@@ -30,6 +30,53 @@ body {
   padding: 10px 20px;
 }
 
+/* animation */
+
+.call-us-icon {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  border: 3px solid #004856;
+  border-radius: 50%;
+  color: #004856;
+  text-align: center;
+  line-height: 70px;
+  transition: .2s;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #f5f5f5;
+}
+
+.call-us-icon i {
+  animation: rotate .3s infinite linear alternate;
+  transition: .2s;
+}
+
+.call-us-icon:hover {
+  background-color: #004856;
+}
+
+.call-us-icon:hover i {
+  color: white;
+  animation-duration: .15s;
+  /* animation-play-state: paused; */
+  /* animation: none; */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+
 /* header */
 
 header {
@@ -436,7 +483,6 @@ button.btn4:hover i.fa-chevron-right {
   margin: 20px;
   border-radius: 15px;
   font-family: 'Righteous', cursive;
-  font-size: 26px;
   padding: 5px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
 }
@@ -459,7 +505,6 @@ button.btn4:hover i.fa-chevron-right {
 .restaurants .wrap div p {
   font-family: 'Open Sans', sans-serif;
   color: rgb(102, 102, 102);
-  font-size: 18px;
 }
 
 .restaurants .wrap div a {
@@ -742,6 +787,13 @@ div.footer {
 }
 
 @media (max-width: 900px) {
+
+  /* animation */
+
+  .call-us-icon {
+    display: none;
+  }
+
 
   /* section eat  */
 
